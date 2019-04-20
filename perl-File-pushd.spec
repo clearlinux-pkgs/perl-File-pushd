@@ -4,11 +4,11 @@
 #
 Name     : perl-File-pushd
 Version  : 1.016
-Release  : 9
+Release  : 10
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libf/libfile-pushd-perl/libfile-pushd-perl_1.016-1.debian.tar.xz
-Summary  : 'change directory temporarily for a limited scope'
+Summary  : Change directory temporarily for a limited scope
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: perl-File-pushd-license = %{version}-%{release}
@@ -24,6 +24,7 @@ version 1.016
 Summary: dev components for the perl-File-pushd package.
 Group: Development
 Provides: perl-File-pushd-devel = %{version}-%{release}
+Requires: perl-File-pushd = %{version}-%{release}
 
 %description dev
 dev components for the perl-File-pushd package.
@@ -42,7 +43,7 @@ license components for the perl-File-pushd package.
 cd ..
 %setup -q -T -D -n File-pushd-1.016 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/File-pushd-1.016/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/File-pushd-1.016/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
