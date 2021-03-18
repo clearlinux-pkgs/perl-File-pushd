@@ -4,7 +4,7 @@
 #
 Name     : perl-File-pushd
 Version  : 1.016
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libf/libfile-pushd-perl/libfile-pushd-perl_1.016-1.debian.tar.xz
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/File/pushd.pm
+/usr/lib/perl5/vendor_perl/5.32.1/File/pushd.pm
