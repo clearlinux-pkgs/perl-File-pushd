@@ -7,7 +7,7 @@
 #
 Name     : perl-File-pushd
 Version  : 1.016
-Release  : 30
+Release  : 31
 URL      : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-pushd-1.016.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libf/libfile-pushd-perl/libfile-pushd-perl_1.016-1.debian.tar.xz
